@@ -1,29 +1,5 @@
 .block
-  .secondary-navigation
-    %ul.wat-cf
-      %li.first.active=link_to "#{t('web-app-theme.list', :default => 'List')}", 'posts_path'
-      %li=link_to "#{t('web-app-theme.new', :default => 'New')}", 'new_post_path'
   .content
-    %h2.title
-      =t('web-app-theme.all', :default => 'All')
-      Posts
+    %h2.title Seja bem-vindo!
     .inner
-      %table.table
-        %tr
-          %th.first ID
-          %th= t('web-app-theme.created_at', :default => 'Created at')
-          %th.last &nbsp;
-        -@posts=[]
-        -@posts.each do |post|
-          %tr{:class => cycle('odd', 'even')}
-            %td
-              =post.id
-            %td
-              =post.created_at
-            %td.last
-              =link_to "#{t('web-app-theme.show', :default => 'Show')}", post_path(post)
-              |
-              \#{link_to "#{t('web-app-theme.edit', :default => 'Edit')}", edit_post_path(post)} |
-              \#{link_to "#{t('web-app-theme.delete', :default => 'Delete')}", post_path(post), :method => :delete, :confirm => "#{t('web-app-theme.confirm', :default => 'Are you sure?')}"}
-      .actions-bar.wat-cf
-        .actions
+      %p bla bla
