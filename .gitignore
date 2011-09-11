@@ -1,3 +1,5 @@
+*.swo
+*.swp
 .bundle
 .sass-cache/
 config/database.yml
