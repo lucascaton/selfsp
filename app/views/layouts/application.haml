@@ -2,7 +2,7 @@
 %html
   %head
     %title [self SP];
-    =stylesheet_link_tag    'application'
+    =stylesheet_link_tag 'application'
     =javascript_include_tag 'application'
     =csrf_meta_tags
   %body
@@ -11,14 +11,16 @@
         %h1=link_to '[self SP];', root_path
         #main-navigation
           %ul.wat-cf
-            %li.active=link_to 'Home', '#'
-            %li=link_to 'Encontros', '#'
-            %li=link_to 'Quem pode participar?', '#'
-            %li=link_to 'Grupo de discussão', '#'
-            %li=link_to 'Tutoriais', '#'
-        -# #user-navigation
-        -#   %ul.wat-cf
-        -#     %li=link_to 'link', '#'
+            %li=link_to 'Encontros', '#encontros'
+            %li=link_to 'Quem pode participar?', '#quem_pode_participar'
+            %li=link_to 'Grupo de discussão', '#grupo_de_discussao'
+            %li=link_to 'Tutoriais', '#tutoriais'
+        #user-navigation
+          %ul.wat-cf
+            %li=link_to 'Grupo', 'http://groups.google.com/group/selfsp', :class => 'external'
+            %li=link_to 'Twitter', 'http://twitter.com/selfsp', :class => 'external'
+            %li=link_to 'Facebook', 'http://www.facebook.com/groups/174974225914064/', :class => 'external'
+            %li=link_to 'Contato', 'mailto:admin@selfsp.org'
         #wrapper.wat-cf
           #main
             =yield
@@ -27,7 +29,9 @@
             #block
               %h3 Quem somos?
               .content
-                %p Lorem ipsum dolor
+                %p="Criado em setembro de 2011, o <strong>[self SP];</strong> é um grupo de usuários da linguagem Objective C, tanto para desenvolviemtno para a plataforma iOS quanto para a plataforma Mac OSX.".html_safe
+                %p="O objetivo do grupo é agrupar informações relevantes, facilitar o encontro dos usuários e incentivar discussões (saudáveis) sobre o assunto.".html_safe
+                =image_tag 'selfsp.png'
 
         #footer
           #block
