@@ -9,6 +9,7 @@ gem 'therubyracer'
 
 group :development do
   gem 'ruby-debug'
+  gem 'web-app-theme', '>= 0.7'
 end
 
 group :assets do
