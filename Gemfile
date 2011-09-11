@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'jquery-rails'
 gem 'json'
+gem 'haml'
 gem 'pg'
 gem 'rails', '3.1.0'
 
