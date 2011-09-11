@@ -6,4 +6,29 @@
     =javascript_include_tag 'application'
     =csrf_meta_tags
   %body
-    =yield
+    #container
+      #header
+        %h1=link_to '[self SP];', root_path
+        #main-navigation
+          %ul.wat-cf
+            %li.active=link_to 'Home', '#'
+            %li=link_to 'Encontros', '#'
+            %li=link_to 'Quem pode participar?', '#'
+            %li=link_to 'Grupo de discussão', '#'
+            %li=link_to 'Tutoriais', '#'
+        -# #user-navigation
+        -#   %ul.wat-cf
+        -#     %li=link_to 'link', '#'
+        #wrapper.wat-cf
+          #main
+            =yield
+
+          #sidebar
+            #block
+              %h3 Quem somos?
+              .content
+                %p Lorem ipsum dolor
+
+        #footer
+          #block
+            %p Copyright &copy; #{Date.today.year} [self SP];
