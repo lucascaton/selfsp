@@ -1,10 +1,11 @@
 source 'http://rubygems.org'
 
+gem 'haml'
 gem 'jquery-rails'
 gem 'json'
-gem 'haml'
 gem 'pg'
 gem 'rails', '3.1.0'
+gem 'therubyracer'
 
 group :development do
   gem 'ruby-debug'
