@@ -1,5 +1,6 @@
 *.swo
 *.swp
+.DS_Store
 .bundle
 .sass-cache/
 config/database.yml
