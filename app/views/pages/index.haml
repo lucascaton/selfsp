@@ -7,7 +7,9 @@
 
     %h2.title#encontros Encontros
     .inner
-      %p Aguarde... estamos planejando nosso primeiro encontro :-)
+      %p="→ 1º encontro oficial #{link_to '[blog post]', 'http://blog.selfsp.org/?p=31'},
+        #{link_to '[agendatech]', 'http://agendatech.com.br/eventos/tecnologia/2012/primeiro-encontro-oficial-self-sp'},
+        #{link_to '[Call4Paperz]', 'http://call4paperz.com/events/self-sp'}".html_safe
     %br
 
     %h2.title#quem_pode_participar Quem pode participar?
