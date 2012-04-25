@@ -8,7 +8,6 @@ gem 'rails', '3.1.0'
 gem 'therubyracer'
 
 group :development do
-  gem 'ruby-debug'
   gem 'web-app-theme', '>= 0.7'
 end
 
